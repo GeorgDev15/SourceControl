@@ -19,7 +19,9 @@ namespace SourceControl
 
         private void btnExit_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("The program will now close.");
             this.Close();
+
         }
     }
 }
