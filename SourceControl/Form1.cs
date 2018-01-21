@@ -107,7 +107,10 @@ namespace SourceControl
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            Street delete = new Street();
 
+
+            delete.StreetName = streets[cboStreetName.SelectedIndex];
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)

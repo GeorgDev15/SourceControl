@@ -92,7 +92,7 @@ namespace SourceControl
             SqlCommand command = new SqlCommand();
             command.Connection = con;
             command.CommandText = @"DELETE FROM Streets
-                                    WHERE StreetName ";
+                                    WHERE StreetName StreetName";
 
             try
             {
@@ -106,8 +106,8 @@ namespace SourceControl
                 {
                     Street st = new Street();
 
-                    st.StreetName = (string)r["@id"];
-
+                    st.StreetName = (string)r["StreetName"];
+                    
                 }
                 return list;
             }
