@@ -33,12 +33,14 @@
             this.txtStreetName = new System.Windows.Forms.TextBox();
             this.lstStreets = new System.Windows.Forms.ListBox();
             this.cboStreetName = new System.Windows.Forms.ComboBox();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnExit
             // 
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.Location = new System.Drawing.Point(159, 191);
+            this.btnExit.Location = new System.Drawing.Point(193, 203);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(79, 46);
             this.btnExit.TabIndex = 0;
@@ -48,7 +50,7 @@
             // 
             // btnAddStreet
             // 
-            this.btnAddStreet.Location = new System.Drawing.Point(21, 191);
+            this.btnAddStreet.Location = new System.Drawing.Point(181, 12);
             this.btnAddStreet.Name = "btnAddStreet";
             this.btnAddStreet.Size = new System.Drawing.Size(91, 46);
             this.btnAddStreet.TabIndex = 1;
@@ -58,7 +60,7 @@
             // 
             // txtStreetName
             // 
-            this.txtStreetName.Location = new System.Drawing.Point(84, 12);
+            this.txtStreetName.Location = new System.Drawing.Point(21, 12);
             this.txtStreetName.Name = "txtStreetName";
             this.txtStreetName.Size = new System.Drawing.Size(100, 20);
             this.txtStreetName.TabIndex = 2;
@@ -66,7 +68,7 @@
             // lstStreets
             // 
             this.lstStreets.FormattingEnabled = true;
-            this.lstStreets.Location = new System.Drawing.Point(75, 90);
+            this.lstStreets.Location = new System.Drawing.Point(22, 65);
             this.lstStreets.Name = "lstStreets";
             this.lstStreets.Size = new System.Drawing.Size(120, 95);
             this.lstStreets.TabIndex = 3;
@@ -75,10 +77,30 @@
             // cboStreetName
             // 
             this.cboStreetName.FormattingEnabled = true;
-            this.cboStreetName.Location = new System.Drawing.Point(75, 50);
+            this.cboStreetName.Location = new System.Drawing.Point(21, 38);
             this.cboStreetName.Name = "cboStreetName";
             this.cboStreetName.Size = new System.Drawing.Size(121, 21);
             this.cboStreetName.TabIndex = 4;
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(181, 65);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(91, 42);
+            this.btnUpdate.TabIndex = 5;
+            this.btnUpdate.Text = "Update Street";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(181, 113);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(91, 46);
+            this.btnDelete.TabIndex = 6;
+            this.btnDelete.Text = "Delete Street";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // Form1
             // 
@@ -87,6 +109,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.cboStreetName);
             this.Controls.Add(this.lstStreets);
             this.Controls.Add(this.txtStreetName);
@@ -107,6 +131,8 @@
         private System.Windows.Forms.TextBox txtStreetName;
         private System.Windows.Forms.ListBox lstStreets;
         private System.Windows.Forms.ComboBox cboStreetName;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnDelete;
     }
 }
 

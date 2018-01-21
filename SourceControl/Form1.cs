@@ -104,5 +104,16 @@ namespace SourceControl
             PopulateStreetComboBox();
             PopulateStreetList();
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            PopulateStreetList();
+            PopulateStreetComboBox();
+        }
     }
 }

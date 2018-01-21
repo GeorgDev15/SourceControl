@@ -85,5 +85,37 @@ namespace SourceControl
             }
         }
 
+        public static List<Street> DeleteStreets()
+        {
+            SqlConnection con = DBHelper.GetConnection();
+
+            SqlCommand command = new SqlCommand();
+            command.Connection = con;
+            command.CommandText = @"DELETE FROM Streets
+                                    WHERE StreetName ";
+
+            try
+            {
+                con.Open();
+
+                SqlDataReader r = command.ExecuteReader();
+
+                List<Street> list = new List<Street>();
+
+                while (r.Read())
+                {
+                    Street st = new Street();
+
+                    st.StreetName = (string)r["@id"];
+
+                }
+                return list;
+            }
+            finally
+            {
+                con.Dispose();
+
+            }
+        }
     }
 }
