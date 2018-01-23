@@ -92,7 +92,7 @@ namespace SourceControl
             SqlCommand command = new SqlCommand();
             command.Connection = con;
             command.CommandText = @"DELETE FROM Streets
-                                    WHERE StreetName StreetName";
+                                    WHERE StreetName = ";
 
             try
             {

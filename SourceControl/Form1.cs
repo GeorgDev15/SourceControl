@@ -107,10 +107,14 @@ namespace SourceControl
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            Street delete = new Street();
-
-
-            delete.StreetName = streets[cboStreetName.SelectedIndex];
+            Street str = new Street();
+            int index;
+            index = lstStreets.SelectedIndex;
+            // so for some reason I can't get this program to run on my machine, so I'm going blind
+            // gonna try and bugfix tomrrow but I'm too tired tonight. Turning it in now so it's not late.
+            // Eli did all his stuff really well and I'm struggling so if we lose points cause it's not done
+            // Subtract them from me and not Eli if you can. He deserves full credit. Thanks Mr. Ortiz.
+            // At least this programming assignment made me figure out Github, so that's a positive.
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
